@@ -25,6 +25,10 @@ Then you can compile the .proto like this:
 
 `protoc --lua_out=./ foo.proto`
 
+When you want to compile a lua file containing protobuf code, you will need to run:
+
+`export LD_LIBRARY_PATH=/usr/local/openresty/luajit/lib/:$LD_LIBRARY_PATH`
+
 
 ## Quick Example
 You write a .proto file like this:
